@@ -1,0 +1,263 @@
+// header---------------------------
+
+@media screen and (max-width: 1170px) {
+    .header__inner {
+        display: block;
+        padding: 20px 0 40px;
+    }
+
+    .header__inner>div {
+        padding-top: 20px;
+    }
+
+    #mobile-btn-plus-basket {
+        max-width: 498px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    #mobile-btn-plus-basket .basket {
+        font-size: 13px;
+    }
+
+    #mobile-btn-plus-basket .basket a:last-child::after {
+        font-size: 12px;
+        left: 39px;
+    }
+
+    .btn-mobile,
+    .basket-mobile {
+        display: none;
+    }
+
+    .basket {
+        margin-left: 22px;
+    }
+
+    .header__logo {
+        text-align: center;
+    }
+
+    .header__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header__contacts ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__contacts_bottom {
+        border: none;
+    }
+
+    .header__contacts_bottom,
+    .header__contacts_top {
+        max-width: 298px;
+        width: 100%;
+    }
+
+    .header__contacts_top li,
+    .header__contacts_bottom li {
+        padding-top: 8px;
+    }
+
+    .header__contacts_top li::after,
+    .header__contacts_bottom li::after {
+        top: 8px;
+    }
+
+    .header__contacts_top li:first-child {
+        padding-left: 24px;
+    }
+
+
+    .header__contacts_top li,
+    .header__contacts_bottom li {
+        padding-left: 24px;
+    }
+}
+
+// header---------------------------
+
+
+// form---------------------------
+
+@media screen and (max-width: 1100px) {
+    .back-form__right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        form {
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    .form-template {
+        min-height: 377px;
+    }
+
+    .form-push {
+        flex-direction: column;
+    }
+
+    .send-button input {
+        margin: 15px 0 30px;
+    }
+
+    .back-form__right-content h1 {
+        font-size: 24px;
+        margin: 35px 0 15px;
+    }
+
+    .form-template {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .form-left input {
+        max-width: 400px;
+        margin: 10px 0;
+    }
+
+    .form-right textarea {
+
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer__inner-bottom {
+        min-height: 100px;
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .back-form__left-content {
+        display: none;
+    }
+
+    .back-form__inner {
+        justify-content: center;
+    }
+
+    .form-push {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .footer__inner-bottom {
+        align-items: flex-start;
+    }
+
+    .left-content {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .form-left {
+        min-width: 300px;
+    }
+
+    .form-right textarea {
+        min-width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 419px) {
+
+    .form-template {
+        max-width: 280px;
+    }
+    
+    .back-form__right-content h1 {
+        font-size: 18px;
+    }
+
+    .footer__inner .columns:last-child {
+        min-width: 280px;
+        padding: 0;
+    }
+
+    .form-left {
+        min-width: 288px;
+    }
+
+    .form-left input {
+        padding: 0 15px;
+        min-width: 256px;
+    }
+
+    .form-right textarea {
+        padding: 15px;
+        min-width: 256px;
+    }
+
+    .footer__inner .columns:last-child {
+        min-width: 290px !important;
+
+    }
+
+    .form-template {
+        min-height: 366px;
+    }
+
+    .checkbox input[type="checkbox"]+label {
+        font-size: 13px;
+    }
+
+    // .form-template {
+    //     min-height: 367px;
+    // }
+}
+
+// form---------------------------
+
+// footer---------------------------
+
+@media screen and (max-width: 1020px) {
+    .footer__inner .columns {
+        max-width: 30%;
+        padding: 15px 15px;
+        &:last-child {
+            max-width: 100%;
+            min-width: 320px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .footer__inner  {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .footer__inner .columns {
+        max-width: 39%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer__inner .columns:not(:last-child) {
+        display: none;
+    }
+}
+
+// footer---------------------------
