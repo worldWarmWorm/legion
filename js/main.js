@@ -27,7 +27,7 @@ $(function () {
 
 
     var item2 = $('a.suggest-left');
-    
+
     $(item2).hover(
         function () {
             $(this).find('div').removeClass('suggest-default');
@@ -39,16 +39,29 @@ $(function () {
         }
     );
 
+    if(screen.width <= 1200) {
+        $(item2).unbind('mouseenter, mouseleave');
+    }
+
 
 
     var item3 = $('.power-item');
 
     $(item3).hover(
         function () {
-            $(this).find('p').slideDown('hidden').is(':hidden');
+            $(this).find('p').stop().slideDown('hidden').is(':hidden');
         },
         function () {
-            $(this).find('p').slideUp('shown');
+            $(this).find('p').stop().slideUp('shown');
         }
-    );    
+    ); 
+    
+    $("#my-mmenu").mmenu({
+        "extensions": [
+        "position-left",
+        "fx-menu-slide",
+        ]
+    },{
+        "language":"ru"
+    });
 });
